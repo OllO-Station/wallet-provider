@@ -18,11 +18,11 @@
   },
   "typings": "index.d.ts",
   "name": "@nestwallet/wallet-provider",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "dependencies": {
-    "@nestwallet/web-extension-interface": "",
-    "@nestwallet/use-wallet": "1.2.1",
-    "@nestwallet/wallet-controller": "1.0.2"
+    "@nestwallet/web-extension-interface": "1.2.0",
+    "@nestwallet/use-wallet": "1.2.2",
+    "@nestwallet/wallet-controller": "1.2.0"
   },
   "main": "./_commonjs/index.js",
   "module": "./index.js",
