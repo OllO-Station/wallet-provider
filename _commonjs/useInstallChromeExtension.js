@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useInstallChromeExtension = void 0;
-const use_wallet_1 = require("@terra-money/use-wallet");
+const use_wallet_1 = require("@nestwallet/use-wallet");
 const react_1 = require("react");
 function useInstallChromeExtension() {
     const { availableInstallTypes, install } = (0, use_wallet_1.useWallet)();

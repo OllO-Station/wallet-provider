@@ -1,4 +1,4 @@
-import { getChainOptions, } from '@terra-money/wallet-controller';
+import { getChainOptions, } from '@nestwallet/wallet-controller';
 import { useEffect, useState } from 'react';
 export function useChainOptions() {
     const [chainOptions, setChainOptions] = useState(null);

@@ -1,9 +1,14 @@
 {
-  "author": "Terraform Labs PTE.LTD",
+  "author": "OLLO Station",
   "license": "Apache-2.0",
-  "repository": "git://github:terra-money/wallet-provider",
-  "bugs": "https://github.com/terra-money/wallet-provider/issues",
-  "homepage": "https://github.com/terra-money/wallet-provider/tree/main/packages/src/@terra-money/wallet-provider",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OllO-Station/wallet-provider.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OllO-Station/wallet-provider.git/issues"
+  },
+  "homepage": "https://github.com/OllO-Station/wallet-provider.git",
   "engines": {
     "node": ">=16"
   },
@@ -12,12 +17,12 @@
     "access": "public"
   },
   "typings": "index.d.ts",
-  "name": "@terra-money/wallet-provider",
-  "version": "4.0.1",
+  "name": "@nestwallet/wallet-provider",
+  "version": "1.2.0",
   "dependencies": {
-    "@terra-money/web-extension-interface": "^4.0.1",
-    "@terra-money/use-wallet": "^4.0.1",
-    "@terra-money/wallet-controller": "^4.0.1"
+    "@nestwallet/web-extension-interface": "",
+    "@nestwallet/use-wallet": "1.2.1",
+    "@nestwallet/wallet-controller": "1.0.2"
   },
   "main": "./_commonjs/index.js",
   "module": "./index.js",
@@ -81,5 +86,9 @@
       "node": "./_commonjs/WalletProvider.js",
       "default": "./WalletProvider.js"
     }
+  },
+  "description": "Library to make React dApps easier using Nest Wallet Extension or Nest Wallet Mobile.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

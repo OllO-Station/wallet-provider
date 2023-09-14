@@ -24,7 +24,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.StaticWalletProvider = void 0;
-const use_wallet_1 = require("@terra-money/use-wallet");
+const use_wallet_1 = require("@nestwallet/use-wallet");
 const react_1 = __importStar(require("react"));
 function StaticWalletProvider({ children, defaultNetwork, status = use_wallet_1.WalletStatus.INITIALIZING, availableConnectTypes = [], availableInstallTypes = [], availableConnections = [], availableInstallations = [], wallets = [], supportFeatures = new Set(), connection = undefined, }) {
     const state = (0, react_1.useMemo)(() => {

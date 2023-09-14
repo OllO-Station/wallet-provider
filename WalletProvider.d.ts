@@ -1,4 +1,4 @@
-import { WalletControllerOptions } from '@terra-money/wallet-controller';
+import { WalletControllerOptions } from '@nestwallet/wallet-controller';
 import { ReactNode } from 'react';
 export interface WalletProviderProps extends WalletControllerOptions {
     children: ReactNode;

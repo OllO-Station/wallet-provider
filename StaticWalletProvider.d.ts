@@ -1,5 +1,5 @@
-import { TerraWebExtensionFeatures } from '@terra-money/web-extension-interface';
-import { Connection, ConnectType, Installation, NetworkInfo, WalletInfo, WalletStatus } from '@terra-money/use-wallet';
+import { TerraWebExtensionFeatures } from '@nestwallet/web-extension-interface';
+import { Connection, ConnectType, Installation, NetworkInfo, WalletInfo, WalletStatus } from '@nestwallet/use-wallet';
 import { ReactNode } from 'react';
 export interface StaticWalletProviderProps {
     children: ReactNode;

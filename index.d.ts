@@ -1,5 +1,5 @@
-export * from '@terra-money/use-wallet';
-export * from '@terra-money/wallet-controller';
+export * from '@nestwallet/use-wallet';
+export * from '@nestwallet/wallet-controller';
 export * from './useChainOptions';
 export * from './WalletProvider';
 export * from './useInstallChromeExtension';

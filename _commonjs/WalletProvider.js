@@ -24,8 +24,8 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.WalletProvider = void 0;
-const use_wallet_1 = require("@terra-money/use-wallet");
-const wallet_controller_1 = require("@terra-money/wallet-controller");
+const use_wallet_1 = require("@nestwallet/use-wallet");
+const wallet_controller_1 = require("@nestwallet/wallet-controller");
 const react_1 = __importStar(require("react"));
 const EMPTY_ARRAY = [];
 const EMPTY_SUPPORT_FEATURES = new Set();

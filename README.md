@@ -10,12 +10,12 @@ Use templates to get your projects started quickly
 
 If you want to test features quickly, you can simply run them on CodeSandbox without having to download Templates.
 
-- [Wallet Provider + Create-React-App](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/create-react-app)
-- [Wallet Provider + Next.js](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/next)
-- [Wallet Provider + Vite.js](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/vite)
-- [Wallet Controller + Lit](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/lit)
-- [Wallet Controller + Vue.js](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/vue)
-- [Wallet Controller + Svelte](https://githubbox.com/terra-money/wallet-provider/tree/main/templates/svelte)
+- [Wallet Provider + Create-React-App](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/create-react-app)
+- [Wallet Provider + Next.js](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/next)
+- [Wallet Provider + Vite.js](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/vite)
+- [Wallet Controller + Lit](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/lit)
+- [Wallet Controller + Vue.js](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/vue)
+- [Wallet Controller + Svelte](https://githubbox.com/nestwallet/wallet-provider/tree/main/templates/svelte)
 
 And if you need to start your project from local computer, use the templates below. 👇
 
@@ -28,7 +28,7 @@ yarn install
 yarn start
 ```
 
-<https://github.com/terra-money/wallet-provider/tree/main/templates/create-react-app>
+<https://github.com/nestwallet/wallet-provider/tree/main/templates/create-react-app>
 
 ### Next.js
 
@@ -39,20 +39,20 @@ yarn install
 yarn run dev
 ```
 
-<https://github.com/terra-money/wallet-provider/tree/main/templates/next>
+<https://github.com/nestwallet/wallet-provider/tree/main/templates/next>
 
 ### Other templates
 
-- [Wallet Provider + Vite.js](https://github.com/terra-money/wallet-provider/tree/main/templates/vite)
-- [Wallet Controller + Lit](https://github.com/terra-money/wallet-provider/tree/main/templates/lit)
-- [Wallet Controller + Vue.js](https://github.com/terra-money/wallet-provider/tree/main/templates/vue)
-- [Wallet Controller + Svelte](https://github.com/terra-money/wallet-provider/tree/main/templates/svelte)
+- [Wallet Provider + Vite.js](https://github.com/nestwallet/wallet-provider/tree/main/templates/vite)
+- [Wallet Controller + Lit](https://github.com/nestwallet/wallet-provider/tree/main/templates/lit)
+- [Wallet Controller + Vue.js](https://github.com/nestwallet/wallet-provider/tree/main/templates/vue)
+- [Wallet Controller + Svelte](https://github.com/nestwallet/wallet-provider/tree/main/templates/svelte)
 
 ### Community templates (experimental)
 
 You can find more templates in <https://templates.terra.money>. (This is the beginning stage, so it may not be enough yet)
 
-If you make a different type of template, you can register [here](https://github.com/terra-money/templates).
+If you make a different type of template, you can register [here](https://github.com/nestwallet/templates).
 
 # Basic Usage
 
@@ -76,7 +76,7 @@ import {
   WalletProvider,
   WalletStatus,
   getChainOptions,
-} from '@terra-money/wallet-provider';
+} from '@nestwallet/wallet-provider';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -94,7 +94,7 @@ getChainOptions().then((chainOptions) => {
 First, you need to wrap your React App with the `<WalletProvider>` component.
 
 ```jsx
-import { useWallet } from '@terra-money/wallet-provider';
+import { useWallet } from '@nestwallet/wallet-provider';
 import React from 'react';
 
 function Component() {
@@ -133,7 +133,7 @@ import {
   WalletProvider,
   NetworkInfo,
   ReadonlyWalletSession,
-} from '@terra-money/wallet-provider';
+} from '@nestwallet/wallet-provider';
 
 // network information
 const mainnet: NetworkInfo = {
@@ -203,9 +203,9 @@ ReactDOM.render(
 This is a React Hook that can receive all the information. (Other hooks are functions for the convenience of Wrapping
 this `useWallet()`)
 
-<!-- source packages/src/@terra-money/use-wallet/useWallet.ts --pick "Wallet" -->
+<!-- source packages/src/@nestwallet/use-wallet/useWallet.ts --pick "Wallet" -->
 
-[packages/src/@terra-money/use-wallet/useWallet.ts](packages/src/@terra-money/use-wallet/useWallet.ts)
+[packages/src/@nestwallet/use-wallet/useWallet.ts](packages/src/@nestwallet/use-wallet/useWallet.ts)
 
 ````ts
 export interface Wallet {
@@ -399,7 +399,7 @@ export interface Wallet {
    * )
    * ```
    *
-   * This type is same as `import type { TerraWebExtensionFeatures } from '@terra-money/web-extension-interface'`
+   * This type is same as `import type { TerraWebExtensionFeatures } from '@nestwallet/web-extension-interface'`
    */
   supportFeatures: Set<
     'post' | 'sign' | 'sign-bytes' | 'cw20-token' | 'network'
@@ -588,7 +588,7 @@ export interface Wallet {
 <summary><code>useConnectedWallet()</code></summary>
 
 ```jsx
-import { useConnectedWallet } from '@terra-money/wallet-provider'
+import { useConnectedWallet } from '@nestwallet/wallet-provider'
 
 function Component() {
   const connectedWallet = useConnectedWallet()
@@ -618,7 +618,7 @@ function Component() {
 <summary><code>useLCDClient()</code></summary>
 
 ```jsx
-import { useLCDClient } from '@terra-money/wallet-provider';
+import { useLCDClient } from '@nestwallet/wallet-provider';
 
 function Component() {
   const lcd = useLCDClient();
@@ -644,15 +644,15 @@ function Component() {
 
 # Links
 
-- [Releases (Changelog)](https://github.com/terra-money/wallet-provider/releases)
+- [Releases (Changelog)](https://github.com/nestwallet/wallet-provider/releases)
 
 # Trouble-shooting guide
 
 wallet-provider contains the original source codes in sourcemaps.
 
-<img src="https://raw.githubusercontent.com/terra-money/wallet-provider/main/readme-assets/trouble-shooting-guide.png" width="700" style="max-width: 100%" alt="Trouble-Shooting Guide" />
+<img src="https://raw.githubusercontent.com/nestwallet/wallet-provider/main/readme-assets/trouble-shooting-guide.png" width="700" style="max-width: 100%" alt="Trouble-Shooting Guide" />
 
-You can check `src/@terra-money/wallet-provider/` in the Chrome Devtools / Sources Tab, and you can also use breakpoints
+You can check `src/@nestwallet/wallet-provider/` in the Chrome Devtools / Sources Tab, and you can also use breakpoints
 here for debug.
 
 (It may not be visible depending on your development settings such as Webpack.)
@@ -688,7 +688,7 @@ If your wallet has been developed,
 Please send me your wallet App link (Testlight version is OK)
 
 And send me Pull Request by modifying `DEFAULT_CHROME_EXTENSION_COMPATIBLE_BROWSER_CHECK` in
-the `packages/src/@terra-money/wallet-provider/env.ts` file. (or just make an issue is OK)
+the `packages/src/@nestwallet/wallet-provider/env.ts` file. (or just make an issue is OK)
 
 ```diff
 export const DEFAULT_CHROME_EXTENSION_COMPATIBLE_BROWSER_CHECK = (userAgent: string) => {

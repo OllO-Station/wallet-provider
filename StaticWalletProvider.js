@@ -1,4 +1,4 @@
-import { WalletContext, WalletStatus, } from '@terra-money/use-wallet';
+import { WalletContext, WalletStatus, } from '@nestwallet/use-wallet';
 import React, { useMemo } from 'react';
 export function StaticWalletProvider({ children, defaultNetwork, status = WalletStatus.INITIALIZING, availableConnectTypes = [], availableInstallTypes = [], availableConnections = [], availableInstallations = [], wallets = [], supportFeatures = new Set(), connection = undefined, }) {
     const state = useMemo(() => {

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.useChainOptions = void 0;
-const wallet_controller_1 = require("@terra-money/wallet-controller");
+const wallet_controller_1 = require("@nestwallet/wallet-controller");
 const react_1 = require("react");
 function useChainOptions() {
     const [chainOptions, setChainOptions] = (0, react_1.useState)(null);

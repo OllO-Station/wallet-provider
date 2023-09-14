@@ -1,5 +1,5 @@
-import { WalletContext, WalletStatus, } from '@terra-money/use-wallet';
-import { WalletController, } from '@terra-money/wallet-controller';
+import { WalletContext, WalletStatus, } from '@nestwallet/use-wallet';
+import { WalletController, } from '@nestwallet/wallet-controller';
 import React, { useEffect, useMemo, useState } from 'react';
 const EMPTY_ARRAY = [];
 const EMPTY_SUPPORT_FEATURES = new Set();
